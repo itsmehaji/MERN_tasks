@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #regform {
+        text-align: justify;
+        margin-bottom: 5rem;
+      }
+      table,
+      tr,
+      th,
+      td {
+        border: 1px solid black;
+      }
+      #reg {
+        border: 2px solid black;
+        width: 100%;
+        align-items: justify;
+      }
+      #end {
+        text-align: end;
+      }
+      #bt {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="regform" class="form-group px-3">
+      <h1 style="text-align: center; color: blue">Registration Form</h1>
+      <form>
+        <table id="reg">
+          <tr>
+            <th><label for="fname">FirstName</label></th>
+            <td>
+              <input
+                style="width: 99%"
+                type="text"
+                id="fname"
+                class="form-control"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th><label for="lname">LastName</label></th>
+            <td>
+              <input
+                style="width: 99%"
+                type="text"
+                id="lname"
+                class="form-control"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th><label for="mail">Email</label></th>
+            <td>
+              <input
+                style="width: 99%"
+                type="text"
+                id="mail"
+                class="form-control"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th><label for="pass">Password</label></th>
+            <td>
+              <input
+                style="width: 99%"
+                type="password"
+                id="pass"
+                class="form-control"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th><label for="rpass">Re-Enter Password</label></th>
+            <td>
+              <input
+                style="width: 99%"
+                type="password"
+                id="rpass"
+                class="form-control"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th><label for="sex">Gender</label></th>
+            <td>
+              <div>
+                <input type="radio" id="sex" name="male" value="male" />
+                <label for="male">Male</label>
+              </div>
+              <div>
+                <input type="radio" id="sex" name="female" value="female" />
+                <label for="female">Female</label>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th><label for="age">Age</label></th>
+            <td>
+              <input
+                style="width: 99%"
+                type="number"
+                id="age"
+                class="form-control"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th><label for="phn">Phone Number</label></th>
+            <td>
+              <input
+                style="width: 99%"
+                type="text"
+                id="phn"
+                class="form-control"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th><label for="add">Address</label></th>
+            <td>
+              <input
+                style="width: 99%"
+                type="text"
+                id="add"
+                class="form-control"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th><label for="state">State</label></th>
+            <td>
+              <input
+                style="width: 99%"
+                type="text"
+                id="state"
+                class="form-control"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th><label for="country">Country</label></th>
+            <td>
+              <select name="country" id="country">
+                <option value="india">India</option>
+                <option value="srilanka">Sri Lanka</option>
+                <option value="bangladesh">Bangladesh</option>
+                <option value="nepal">Nepal</option>
+                <option value="bhutan">Bhutan</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th><label for="language">Languages known</label></th>
+            <td>
+              <input
+                type="checkbox"
+                id="language"
+                name="English"
+                value="English"
+              />
+              <label for="Engligh">English</label>
+              <input type="checkbox" id="language" name="Hindi" value="Hindi" />
+              <label for="Hindi">Hindi</label>
+              <input
+                type="checkbox"
+                id="language"
+                name="Telugu"
+                value="Telugu"
+              />
+              <label for="Telugu">Telugu</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" id="declare" />
+              <label for="declare"
+                >I here by declare that all the details above are ture</label
+              >
+            </td>
+          </tr>
+          <tr id="end">
+            <td></td>
+            <td>login to <a href="https://ethnus.com/">Ethnus</a> website</td>
+          </tr>
+        </table>
+        <div id="bt">
+          <button>Register</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

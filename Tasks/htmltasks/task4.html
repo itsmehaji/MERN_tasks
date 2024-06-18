@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #basicform {
+        background-color: white;
+        text-align: left;
+        margin-top: 2rem;
+        justify-content: space-around;
+      }
+    </style>
+  </head>
+  <body>
+    <table id="basicform">
+      <tr>
+        <th><label for="fname">FullName:</label></th>
+        <td><input type="text" id="fname" /></td>
+      </tr>
+      <tr>
+        <th><label for="uname">UserName:</label></th>
+        <td><input type="text" id="uname" /></td>
+      </tr>
+      <tr>
+        <th><label for="pass">Password:</label></th>
+        <td><input type="password" style="width: 9rem" id="pass" /></td>
+      </tr>
+      <tr>
+        <th><label for="repass">Re Enter Password:</label></th>
+        <td><input type="password" style="width: 9rem" id="repass" /></td>
+      </tr>
+      <tr>
+        <th><label for="add">Address:</label></th>
+        <td><input type="text" /></td>
+      </tr>
+      <tr>
+        <th><label for="age">Age:</label></th>
+        <td><input type="number" id="age" /></td>
+      </tr>
+      <tr>
+        <th><label for="sex">Gender:</label></th>
+        <td>
+          <select name="Gender" id="sex">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </td>
+      </tr>
+    </table>
+    <button>Save</button>
+  </body>
+</html>

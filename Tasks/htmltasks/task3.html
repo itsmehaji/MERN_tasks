@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #link {
+        margin-top: 5px;
+        border: 1px solid black;
+        width: 100%;
+        background-color: rgb(237, 235, 235);
+      }
+      #lbox {
+        display: flex;
+        height: 1.5rem;
+        width: 30rem;
+        justify-content: space-around;
+      }
+
+      a {
+        text-decoration: underline;
+        text-decoration-style: solid;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="link">
+      <p>Click any of the following link</p>
+      <div id="lbox">
+        <div id="b">
+          <a
+            href="https://www.youtube.com/watch?v=UZTaGjtBNEE&ab_channel=Gulte.com"
+            target="_blank"
+            >Open in new |</a
+          >
+        </div>
+        <div id="b">
+          <a
+            href="https://www.youtube.com/watch?v=UZTaGjtBNEE&ab_channel=Gulte.com"
+            target="_parent"
+            >Open in _parent |</a
+          >
+        </div>
+        <div id="b">
+          <a
+            href="https://www.youtube.com/watch?v=UZTaGjtBNEE&ab_channel=Gulte.com"
+            target="_self"
+            >Open in _self |</a
+          >
+        </div>
+        <div id="b">
+          <a
+            href="https://www.youtube.com/watch?v=UZTaGjtBNEE&ab_channel=Gulte.com"
+            target="_top"
+            >Open in _top |</a
+          >
+        </div>
+        <div id="b">
+          <a
+            href="https://www.youtube.com/watch?v=UZTaGjtBNEE&ab_channel=Gulte.com"
+            target="_top"
+            >send a mail |</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

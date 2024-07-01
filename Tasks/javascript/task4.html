@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Time and Date</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Current Time and Date</h1>
+      <button onclick="showDate()">Show Date</button>
+      <button onclick="showTime()">Show Time</button>
+      <p id="datetime"></p>
+    </div>
+    <script>
+      function showDate() {
+        let now = new Date();
+        let date = now.toLocaleDateString();
+        document.getElementById("datetime").innerText = `Date: ${date}`;
+      }
+
+      function showTime() {
+        let now = new Date();
+        let time = now.toLocaleTimeString();
+        document.getElementById("datetime").innerText = `Time: ${time}`;
+      }
+    </script>
+  </body>
+</html>

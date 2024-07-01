@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Train Animation</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #e0f7fa;
+      }
+
+      .container {
+        position: relative;
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        background-color: #b2dfdb;
+        border: 5px solid #004d40;
+        border-radius: 10px;
+      }
+
+      .train {
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        height: 100%;
+        width: auto;
+        max-height: 100px;
+        transition: transform 1s linear;
+      }
+
+      .controls {
+        margin-top: 20px;
+      }
+
+      button {
+        padding: 10px 20px;
+        margin: 0 10px;
+        background-color: #00796b;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      button:hover {
+        background-color: #004d40;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="./image1.png" alt="Train" class="train" id="train" />
+    </div>
+    <div class="controls">
+      <button onclick="startTrain()">Start</button>
+      <button onclick="stopTrain()">Stop</button>
+    </div>
+    <script>
+      let train = document.getElementById("train");
+      let isMoving = false;
+      let animationFrame;
+
+      function startTrain() {
+        if (!isMoving) {
+          isMoving = true;
+          moveTrain();
+        }
+      }
+
+      function stopTrain() {
+        isMoving = false;
+        cancelAnimationFrame(animationFrame);
+      }
+
+      function moveTrain() {
+        let trainPosition = train.offsetLeft;
+        train.style.left = `${trainPosition + 2}px`;
+
+        if (train.offsetLeft + train.clientWidth > window.innerWidth) {
+          train.style.left = "-200px";
+        }
+
+        if (isMoving) {
+          animationFrame = requestAnimationFrame(moveTrain);
+        }
+      }
+    </script>
+  </body>
+</html>
